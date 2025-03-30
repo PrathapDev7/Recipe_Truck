@@ -1,0 +1,14 @@
+.list {
+    list-style: none;
+    padding: 10px;
+    width: 180px;
+    transition: 1s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+    .list {
+        width: 140px;
+        border-bottom: 1px solid #6d6767;
+        font-weight: 600;
+    }
+}

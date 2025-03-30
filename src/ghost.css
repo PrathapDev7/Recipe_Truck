@@ -1,0 +1,54 @@
+.box {
+  
+    margin-top: 24px;
+    height: 200px;
+    width: 200px;
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    object-fit: cover;
+    border-radius: 10px;
+    animation: ghost 1s linear infinite alternate;
+  }
+  
+  @keyframes ghost {
+     0% {
+       background-color: hsl(200, 20%, 70%);
+     }
+     100% {
+      background-color: hsl(200, 20%, 95%);
+    }
+  }
+  
+  #ghost {
+    display: grid;
+    grid-template-columns: 230px 230px 230px 230px 230px;
+    
+  
+  }
+  
+  .text{
+    max-width: 200px;
+      text-align: center;
+      border-radius: 20px;
+      color: transparent;
+      animation: ghost 1s linear infinite alternate;
+  }
+
+  @media screen and (max-width: 480px) {
+    #ghost {
+      grid-template-columns: 190px 160px ;
+    }
+    .box {
+      margin-top: 10px;
+      width: 170px;
+      max-height: 220px;
+    }
+    .text {
+      max-width: 150px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  }
